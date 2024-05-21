@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.19)
+project(LeaverLib)
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+
+set(CMAKE_CXX_STANDARD 14)
+set(SOURCES Leaver.cpp)
+set(HEADERS Leaver.h)
+
+add_library(LeaverLib SHARED ${SOURCES} ${HEADERS})
+
